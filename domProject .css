@@ -1,0 +1,156 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    
+}
+html,body{
+    background-color: rgb(191, 233, 233);
+    width: 100%;
+}
+h2{
+    font-variant: small-caps;
+    color: #f1a9a9;
+    padding: 12px;
+    text-shadow: 1px 2px 3px #decfcf;
+    /* text-align: center; */
+}
+.BMISection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+   /* padding-bottom: 1.2rem; */
+   padding: 1.2rem 12rem;
+   margin: auto;
+   gap:30px
+  
+}
+.guessNumber{
+    font-variant: small-caps;
+    position: relative;
+}
+.bmiDiv{
+    width: 300px;
+    background-color: #ccc;
+    text-align: center;
+    height: 385px;
+    border-radius: 12px;
+    outline:13px solid rgba(145, 222, 30, 0);
+    box-shadow: 2px 2px 5px 2px #f1a9a9;
+    animation: blink  5s linear infinite;
+}
+@keyframes blink {
+    10%{
+        outline:13px solid rgba(63, 179, 229, 0.583)
+        /* background-color: #fff; */
+    }
+    40%{
+        outline:13px solid rgba(224, 148, 41, 0.46);
+        /* background-color: cyan; */
+    }
+    50%{
+        outline:13px solid rgba(161, 31, 159, 0.415);
+        /* background-color: red; */
+    }
+    100%{
+        outline:13px solid rgba(172, 255, 47, 0.421);
+        /* background-color: red; */
+    }
+}
+
+.bmiDiv form label,.result{
+    display: block;
+    font-weight: bolder;
+    font-family: cursive;
+    color: blue;
+}
+/* .result{
+    margin-top: 12px;
+} */
+form{
+    padding: 30px;
+    margin-top: 1rem;
+}
+form input{
+    width: 90%;
+    padding: 10px 2px;
+    margin: 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+}
+.button,.newBtn{
+    padding: 7px 32px;
+    font-weight: 600;
+    border-radius: 5px;
+    border:none;
+    margin-top:3rem;
+    background-color: #abf1ed;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.newBtn{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    background-color: #edf3ea;
+    color: black;
+}
+.button:focus{
+    background-color: #e87b7b; 
+    color:white
+}
+input:focus{
+    font-variant: small-caps;
+    color: rgb(5, 37, 61);
+    font-size: larger;
+    font-weight: bold;
+}
+input::placeholder{
+    text-align: right;
+    padding-right: 12px;
+}
+/***** Gusseing Game *****/ 
+
+.guesspara{
+    padding: 12px;
+
+}
+.marginTop{
+    margin-top: -12px;
+}
+.computerGuess{
+    font-size: larger;
+    color: red;
+}
+.winLoss{
+    width: 300px;
+    color: red;
+    font-size: 32px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    & span{
+        text-shadow: 2px 3px 4px black;
+    }
+}
+.guessingRetut{
+    color: red;
+    font-size: 1.2rem;
+    font-family:Helvetica, sans-serif;
+    padding-top: 7px;
+}
+
+
+/***** End Gusseing Game *****/
+
+@media only screen and (max-width: 768px) {
+    .BMISection{
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Project</title>
+    <link rel="stylesheet" href="domProject .css" />
+  </head>
+  <body>
+    <header class="BMISection">
+      <section>
+        <h2>BMI Calculator</h2>
+        <div class="bmiDiv">
+          <form action="#">
+            <label for="height">Height In CM</label>
+            <input
+              type="text"
+              name="HightName"
+              id="height"
+              placeholder="CM"
+              maxlength="3"
+            />
+            <br />
+
+            <label for="weight">Weight In KG</label>
+            <input
+              type="text"
+              name="WeighttName"
+              id="weight"
+              placeholder="KG"
+              required
+            />
+            <br />
+
+            <button class="button" id="button1">Calculate</button>
+            <div class="result">
+              <b style="color: black;">Your BMI Rate Is : </b
+              ><span class="BmiResult"></span>
+            </div>
+            <div class="clock">tt:mm:ss:am/pm</div>
+          </form>
+        </div>
+      </section>
+      <br />
+      <!-- ========== Start guessing Game ========== -->
+      <section class="guessNumber guessheight">
+        <h2>Gussing Game</h2>
+        <br />
+        <div class="guessDiv bmiDiv">
+          <p class="guesspara">
+            Try And Guess a Random Numer between 1 and 100 you have 10 Attampt
+            to guess the right Number
+          </p>
+          <label for="guess"><h1>Guess A Number</h1></label> 
+          <form action="#" class="form2 result">
+            <p>Computer Guesess: <span class="computerGuess"></span></p>
+            <input type="number" id="guess" placeholder="Guess 1 and 5" required />
+            <div class="winLoss">
+                <span class="win"></span>
+              </div>
+            <button class="button btn2" id="button2">Submit Guess</button>
+           
+          </form>
+          <div class="result marginTop">
+            <p> You win <span style="color:red; font-size:larger"; class="wintime">0</span> Time  Out Of 5</p>
+            <p>Guesess Remaing: <span style="color:red; font-size:larger" class="GuessRemain">5</span></p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+   
+      <!-- ========== End guessing Game ========== -->
+    </header>
+  </body>
+  <script src="domProject.js"></script>
+
+</html>
